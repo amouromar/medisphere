@@ -1,0 +1,30 @@
+.team {
+  padding: 4rem 2rem;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.teamMembers {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.member {
+  text-align: center;
+}
+
+.memberImage {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Media Queries */
+@media (min-width: 640px) {
+  .teamMembers {
+    justify-content: space-around;
+  }
+}
