@@ -1,9 +1,11 @@
-import LandingPageContent from "./landing/LandingPageContent";
+import React from 'react'
 
-export default function Page() {
+const page = () => {
   return (
     <div>
-      <LandingPageContent />
+      Welcome
     </div>
-  );
+  )
 }
+
+export default page
