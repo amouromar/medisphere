@@ -11,9 +11,13 @@
     "test:watch": "jest --watch"
   },
   "jest": {
+    "preset": "ts-jest",
     "testEnvironment": "jsdom",
     "transform": {
-      "^.+\\.(js|jsx|ts|tsx)$": "babel-jest"
+      "^.+\\.tsx?$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
     },
     "setupFilesAfterEnv": [
       "<rootDir>/jest.setup.js"
@@ -54,8 +58,10 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.4",
     "@babel/preset-react": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
     "@types/jest": "^29.5.13",
@@ -74,6 +80,7 @@
     "postcss": "^8.4.47",
     "prettier": "^3.3.3",
     "tailwindcss": "^3.4.12",
-    "typescript": "^5"
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.6.2"
   }
 }

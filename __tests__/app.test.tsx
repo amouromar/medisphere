@@ -61,7 +61,7 @@ describe("LandingPage", () => {
 
     // Check if the footer is present
     expect(
-      screen.getByText(/© 2023 pharmacare\. all rights reserved\./i)
+      screen.getByText(/© 2024 pharmacare\. all rights reserved\./i)
     ).toBeInTheDocument();
   });
 });
