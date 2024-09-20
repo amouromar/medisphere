@@ -34,10 +34,4 @@ jobs:
         if: github.ref == 'refs/heads/main'
         run: |
           npm install -g vercel
-          vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
-
-      - name: Deploy to Netlify
-        if: github.ref == 'refs/heads/main'
-        run: |
-          npm install -g netlify-cli
-          netlify deploy --prod --dir=out --auth=${{ secrets.NETLIFY_AUTH_TOKEN }}
+          vercel --prod --token=${YEkYc5AsZ9hRmturRs4efZ70}
