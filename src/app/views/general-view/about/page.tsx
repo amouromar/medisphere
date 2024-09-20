@@ -24,7 +24,7 @@ export default function AboutPage() {
                 Revolutionizing Healthcare
               </h2>
               <p className="mt-6 text-xl max-w-3xl">
-                At PharmaCare, we're on a mission to make healthcare accessible,
+                At PharmaCare, we&apos;re on a mission to make healthcare accessible,
                 efficient, and personalized for everyone. Our innovative
                 platform combines cutting-edge technology with compassionate
                 care.

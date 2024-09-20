@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -112,8 +112,8 @@ export default function ContactPage() {
                   <Alert className="mt-4">
                     <AlertTitle>Success</AlertTitle>
                     <AlertDescription>
-                      Your message has been sent successfully. We'll get back to
-                      you soon!
+                      Your message has been sent successfully. We&apos;ll get
+                      back to you soon!
                     </AlertDescription>
                   </Alert>
                 )}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -53,7 +53,7 @@ export default function ForgotPasswordPage() {
         </CardHeader>
         <CardContent>
           <p className="text-center text-gray-600 mb-6">
-            Enter your email address and we'll send you instructions to reset
+            Enter your email address and we&apos;ll send you instructions to reset
             your password.
           </p>
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -84,7 +84,7 @@ export default function ForgotPasswordPage() {
             <Alert className="mt-4">
               <AlertTitle>Check your email</AlertTitle>
               <AlertDescription>
-                We've sent password reset instructions to your email address.
+                We&apos;ve sent password reset instructions to your email address.
               </AlertDescription>
             </Alert>
           )}

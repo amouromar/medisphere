@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
@@ -18,7 +18,7 @@ export default function LoginPage() {
     e.preventDefault();
     setError("");
 
-    //  simulate a successful login
+    // Simulate a successful login
     if (email && password) {
       // Simulate API call delay
       await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -75,7 +75,7 @@ export default function LoginPage() {
         </div>
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-600">
-            Don't have an account?{" "}
+            Don&apos;t have an account?{" "}
             <Link href="./register" className="text-blue-600 hover:underline">
               Register here
             </Link>

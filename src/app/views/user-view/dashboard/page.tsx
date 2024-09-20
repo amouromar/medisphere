@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -24,7 +25,7 @@ const mockOrders = [
 ];
 
 export default function Dashboard() {
-  const [userName, setUserName] = useState("John Doe");
+  const [userName] = useState("John Doe");
   const router = useRouter();
 
   const handleLogout = () => {
