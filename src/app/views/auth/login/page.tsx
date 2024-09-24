@@ -22,7 +22,7 @@ export default function LoginPage() {
     if (email && password) {
       // Simulate API call delay
       await new Promise((resolve) => setTimeout(resolve, 1000));
-      router.push("/views/admin-view/dashboard");
+      router.push("/views/storekeeper-view/storekeeper/dashboard");
     } else {
       setError("Please enter both email and password.");
     }
