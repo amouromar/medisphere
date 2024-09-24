@@ -144,9 +144,10 @@ export default function StorekeeperDashboard() {
     (order) =>
       (order.customer.toLowerCase().includes(orderFilter.toLowerCase()) ||
         order.id.includes(orderFilter)) &&
-      (orderStatusFilter === "All" || orderStatusFilter === "" || order.status === orderStatusFilter)
+      (orderStatusFilter === "All" ||
+        orderStatusFilter === "" ||
+        order.status === orderStatusFilter)
   );
-  
 
   const filteredInventory = inventory.filter(
     (item) =>
